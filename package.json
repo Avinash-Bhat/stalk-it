@@ -1,0 +1,28 @@
+{
+  "name": "stalk-it",
+  "version": "0.1.0",
+  "dependencies": {
+    "winston": "*",
+    "chokidar": "*"
+  },
+  "description": "a stalker that watches over a set of directories and copies the same over place specified",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+	  "test": "tests/test.js"
+  },
+  "keywords": [
+    "watch",
+    "command-line",
+    "utility"
+  ],
+  "author": "Avinash R",
+  "license": "LGPL",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Avinash-Bhat/stalk-it.git"
+  }
+}
