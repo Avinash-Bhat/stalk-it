@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "dependencies": {
     "winston": "*",
-    "chokidar": "*"
+    "chokidar": "*",
+    "commander": "*"
   },
   "description": "a stalker that watches over a set of directories and copies the same over place specified",
   "main": "app.js",
   "devDependencies": {},
   "scripts": {
-	  "test": "tests/test.js"
+    "test": "node ./tests/test.js"
   },
   "keywords": [
     "watch",
@@ -24,5 +25,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/Avinash-Bhat/stalk-it.git"
-  }
+  },
+  "bin": "node app.js"
 }
