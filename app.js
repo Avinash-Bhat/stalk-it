@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 (function() {
 	var DEFAULT_OPTIONS, path, fs, cli, stalker, dirs, configFile, config, stalkers;
 	
@@ -5,13 +7,13 @@
 		ignoreDotFiles: true,
 		ignored: /CVS/
 	};
-	
+
 	path = require("path");
 	fs = require("fs");
 	cli = require("commander");
 	stalker = require("./lib/stalker");
-	
-	cli.version("@version")
+
+	cli.version("0.1.0")
 		.option("-s, --src <source>", "source file/dir to stalk", String)
 		.option("-d, --dest <destination>", "destination", String)
 		.on("--help", function() {
