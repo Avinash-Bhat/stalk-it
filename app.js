@@ -13,7 +13,7 @@
 	cli = require("commander");
 	stalker = require("./lib/stalker");
 
-	cli.version("0.1.0")
+	cli.version("0.1.1")
 		.option("-s, --src <source>", "source file/dir to stalk", String)
 		.option("-d, --dest <destination>", "destination", String)
 		.on("--help", function() {
