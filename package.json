@@ -7,7 +7,11 @@
     "commander": "*"
   },
   "description": "a stalker that watches over a set of directories and copies the same over place specified",
+  "engines": {
+    "node": ">=0.8.0"
+  },
   "main": "app.js",
+  "preferGlobal": true,
   "devDependencies": {},
   "scripts": {
     "test": "node ./tests/test.js"
@@ -18,13 +22,18 @@
     "utility"
   ],
   "author": "Avinash R",
-  "license": "LGPL",
+  "license": {
+	  "type": "LGPL",
+	  "url": "http://github.com/Avinash-Bhat/stalk-it/blob/master/LICENSE"
+  },
   "directories": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Avinash-Bhat/stalk-it.git"
+    "url": "http://github.com/Avinash-Bhat/stalk-it.git"
   },
-  "bin": "node app.js"
+  "bin": {
+	  "stalk-it": "./app.js"
+  }
 }
